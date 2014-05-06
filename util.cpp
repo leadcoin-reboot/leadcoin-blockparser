@@ -50,7 +50,7 @@ void toHex(
         e = src-1;
         incr = -1;
     }
-    
+
     while(likely(p!=e))
     {
         uint8_t c = p[0];
@@ -394,7 +394,7 @@ bool addrToHash160(
 
     BN_bn2mpi(sum, buf);
 
-    uint32_t recordedSize = 
+    uint32_t recordedSize =
         (buf[0]<<24)    |
         (buf[1]<<16)    |
         (buf[2]<< 8)    |
@@ -428,7 +428,7 @@ bool addrToHash160(
 
         uint8_t data[1+kRIPEMD160ByteSize];
         memcpy(1+data, hash160, kRIPEMD160ByteSize);
-        #if defined(LITECOIN)
+        #if defined(LEADCOIN)
             data[0] = 48;
         #else
             data[0] = 0;

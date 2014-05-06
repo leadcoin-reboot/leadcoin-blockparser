@@ -75,7 +75,7 @@ struct Transactions:public Callback
         }
 
         if(0==rootHashes.size()) {
-            #if defined(LITECOIN)
+            #if defined(LEADCOIN)
                 const char *addr = "LKvTVnkK2rAkJXfgPdkaDRgvEGvazxWS9o";
                 warning("no addresses specified, using popular address %s", addr);
             #else

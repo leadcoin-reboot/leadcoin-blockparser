@@ -367,8 +367,8 @@ static void initCallback(
 static void mapBlockChainFiles()
 {
     std::string coinName(
-        #if defined LITECOIN
-            "/.litecoin/"
+        #if defined LEADCOIN
+            "/.leadcoin/"
         #else
             "/.bitcoin/"
         #endif
@@ -514,7 +514,7 @@ static bool buildBlock(
 )
 {
     static const uint32_t expected =
-    #if defined(LITECOIN)
+    #if defined(LEADCOIN)
         0xdbb6c0fb
     #else
         0xd9b4bef9

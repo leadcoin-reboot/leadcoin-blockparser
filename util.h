@@ -255,7 +255,7 @@
     void hash160ToAddr(
               uint8_t *addr,
         const uint8_t *hash160,
-        #if defined(LITECOIN)
+        #if defined(LEADCOIN)
               uint8_t type = 48
         #else
               uint8_t type = 0

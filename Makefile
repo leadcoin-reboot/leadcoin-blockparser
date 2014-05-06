@@ -7,7 +7,7 @@ CPLUS = g++
 INC =                           \
         -I.                     \
         -DNDEBUG                \
-#        -DLITECOIN              \
+        -DLEADCOIN              \
 
 COPT =                          \
         -g0                     \
@@ -179,7 +179,7 @@ OBJS=                       \
     .objs/util.o            \
 
 parser:${OBJS}
-	@echo lnk -- parser 
+	@echo lnk -- parser
 	@${CPLUS} ${LOPT} ${COPT} -o parser ${OBJS} ${LIBS}
 
 clean:
