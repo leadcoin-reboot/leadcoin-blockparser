@@ -1,5 +1,7 @@
 blockparser
 ===========
+    This is quick port of awesome znort987 block parser to work with leadcoin blockchain.
+
 
     Credits:
     --------
